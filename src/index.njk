@@ -11,10 +11,9 @@
   <h2>Library books loop</h2>
   <p>This loops through data that came from a Google Docs example.</p>
   <div class="row">
-    {% for book in library.books %}
+    {% for capital in capitals.capitals %}
       <div class="col">
-        <img src="img/{{ book.slug }}.jpg" alt="" class="img-fluid">
-        <h3><a href="books/{{ book.slug }}.html">{{ book.title }}</a></h3>
+        <h3><a href="capitals/{{ capital.slug }}.html">{{ capital.Name }}</a></h3>
       </div>
     {% endfor %}
   </div>
