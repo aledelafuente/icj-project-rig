@@ -2,19 +2,22 @@
 
 {% set relative_path = "../" %}
 
-{% block page_title %}{{ title }}{% endblock %}
+{% block page_title %}{{ capital.Name }}{% endblock %}
 
-{% block page_description %}{{ title }} by {{ author }}{% endblock %}
+{% block page_description %}{{ Name }} , {{Genre}} at {{ Venue }}{% endblock %}
 
 {% block content %}
   <article class="container">
     <div class="row">
-      <div class="col-sm-4">
-          <img src="../img/{{ slug }}.jpg" alt="" class="img-fluid mb-4">
-      </div>
-      <div class="col-sm-8">
-          <h1>{{ title }}</h1>
+          <div class="col-sm-12">
+          <h2>{{ Name }}</h2>
+          <h3> {{Genre}} at {{Venue}}</h3>
           <p>{{ blurb | safe }}</p>
+      </div>
+      <div class="col-sm-12">
+          <img src="../img/{{ image1 }}" alt="" class="img-fluid mb-4" width="367">
+          <img src="../img/{{ image2 }}" alt="" class="img-fluid mb-4" width="367">
+          <img src="../img/{{ image3 }}" alt="" class="img-fluid mb-4" width="367">
       </div>
     </div>
   </article>

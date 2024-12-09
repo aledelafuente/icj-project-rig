@@ -1,22 +1,49 @@
 {
   "capitals": [
     {
-      "Name": "Austin",
-      "Population": 1000000,
-      "State": "Texas",
-      "slug": "austin"
+      "Name": "Foster The People",
+      "Venue": "Emo's for ACL Fest Nights",
+      "Genre": "American indie pop band",
+      "slug": "foster-the-people",
+      "image1": "Ale de la Fuente- Foster The People-1.jpg",
+      "image2": "Ale de la Fuente- Foster The People-2.jpg",
+      "image3": "Ale de la Fuente- Foster The People-3.jpg"
     },
     {
-      "Name": "Santa Fe",
-      "Population": 30000,
-      "State": "New Mexico",
-      "slug": "santa-fe"
+      "Name": "Cassio Stella",
+      "Venue": "Moody Center Dell Tech Plaza for Vampire Weekend",
+      "Genre": "Asian-American pop rock artist",
+      "slug": "cassio-stella",
+      "image1": "Cassio Stella Moody 2.jpg",
+      "image2": "Cassio Stella Moody 1.jpg",
+      "image3": "Cassio Stella Moody 3.jpg"
     },
     {
-      "Name": "Baton Rouge",
-      "Population": 80000,
-      "State": "Louisiana",
-      "slug": "baton-rouge"
+      "Name": "The Movement",
+      "Venue": "Round Rock Amp for YAR Fest",
+      "Genre": "American reggae band",
+      "slug": "the-movement",
+      "image1": "Ale_de la Fuente_The Movement_2-9-24-07.jpg",
+      "image2": "Ale_de la Fuente_The Movement_2-9-24-11.jpg",
+      "image3": "Ale_de la Fuente_The Movement_2-9-24-13.jpg"
+    }
+  ],
+  "contact": [
+    {
+      "Name": "Email",
+      "Link": "accordingtoale@gmail.com"
+    },
+    {
+      "Name": "Instagram",
+      "Link": "https://www.instagram.com/aledelafuente_/"
+    },
+    {
+      "Name": "LinkedIn",
+      "Link": "https://www.linkedin.com/in/ale-de-la-fuente-82300a228/"
+    },
+    {
+      "Name": "Resume",
+      "Link": "https://docs.google.com/document/d/14zv4IAK0VcbScr4HTRKZQhbCLxXQaYfLJC1p5Y8J1uE/edit?usp=sharing"
     }
   ]
 }

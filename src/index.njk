@@ -6,14 +6,15 @@
 
 {% block content %}
 <div class="container">
-  <h1>2024 Final Project</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in facilisis velit, aliquam congue dui. Mauris id mi quam. Nam enim leo, bibendum vel efficitur id, elementum malesuada est. Pellentesque interdum tempus eros nec iaculis. Quisque ac est dictum, vehicula nulla quis, condimentum dui.</p>
-  <h2>Library books loop</h2>
-  <p>This loops through data that came from a Google Docs example.</p>
+  <h1 class="center", font-family="'Times New Roman', Times, serif", font-size="200px">ALE DE LA FUENTE</h1>
+  <p>Ale de la Fuente is a journalism and media student at The University of Texas at Austin. Currently, she is a photographer in practice and works as a Senior Photographer for The Daily Texan.</p>
+  <h2 class="center">Music Photography</h2>
+  <p>Click below to see more photos from each artist.</p>
   <div class="row">
     {% for capital in capitals.capitals %}
       <div class="col">
-        <h3><a href="capitals/{{ capital.slug }}.html">{{ capital.Name }}</a></h3>
+                <img src="img/{{capital.image1}}" alt="{{capital.alt1}}" width="300"/>
+                <h3 class="center"><a href="capitals/{{ capital.slug }}.html">{{ capital.Name }}</a></h3>
       </div>
     {% endfor %}
   </div>
