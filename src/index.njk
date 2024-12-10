@@ -12,7 +12,7 @@
   <div class="row">
     {% for capital in capitals.capitals %}
       <div class="col">
-                <h3 class="center"><a href="capitals/{{ capital.slug }}.html">{{ capital.Name }}</a></h3>                 
+                <h2 class="center"><a href="capitals/{{ capital.slug }}.html">{{ capital.Name }}</a></h2>                 
                 <img src="img/{{capital.image1}}" alt="{{capital.alt1}}" width="350"/>
       </div>
     {% endfor %}
