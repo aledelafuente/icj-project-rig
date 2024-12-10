@@ -6,25 +6,39 @@
 
 {% block content %}
 <div class="container">
-  <h1 class="center", font-family="'Times New Roman', Times, serif", font-size="200px">ALE DE LA FUENTE</h1>
-  <p>Ale de la Fuente is a journalism and media student at The University of Texas at Austin. Currently, she is a photographer in practice and works as a Senior Photographer for The Daily Texan.</p>
-  <h2 class="center">Music Photography</h2>
-  <p>Click below to see more photos from each artist.</p>
+  <h1 class="center", font-family="Garamond", font-size="200px">ALE DE LA FUENTE</h1>
+  <p>Ale de la Fuente is a journalism and media student at The University of Texas at Austin. Currently, she is a photographer in practice and works as a Senior Photographer for The Daily Texan, photographing breaking news, local events, and music.</p>
   <div class="row">
     {% for capital in capitals.capitals %}
       <div class="col">
-                <img src="img/{{capital.image1}}" alt="{{capital.alt1}}" width="300"/>
+                <img src="img/{{capital.image1}}" alt="{{capital.alt1}}" width="350"/>
                 <h3 class="center"><a href="capitals/{{ capital.slug }}.html">{{ capital.Name }}</a></h3>
       </div>
     {% endfor %}
   </div>
-  <h2>Bookstores loop</h2>
-  <p>This loops through data that came from a Google Sheet example.</p>
-  <hr>
-  {% for store in bookstores.stores %}
-    <h3><a href="{{ store.url }}" target="_blank">{{ store.name }}</a></h3>
-    <p>{{ store.address}}, {{ store.city }}, {{ store.state }} {{ store.zip }}</p>
-    <hr>
-  {% endfor %}
+            <h1 class="ContactForm">Contact Me!</h1>
+            <form action="/login" method="POST">
+                <br/>
+                <label for="name" class="ContactInfo">Name</label>
+                <br/>
+                <textarea class="form-control" id="name" rows="1"></textarea>
+                <br/>
+                <label for="phone" class="ContactInfo">Phone</label>
+                <br/>
+                <textarea class="form-control" id="phone" rows="1"></textarea>
+                <br/>
+                <label for="email" class="ContactInfo">Email</label>
+                <br/>
+                <textarea class="form-control" id="email" rows="1"></textarea>
+                <br/>
+                <label for="message" class="ContactInfo">Message</label>
+                <br/>
+                <textarea class="form-control" id="message" rows="1"></textarea>
+                <br/>
+                <br/>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                </div>
+            </form>
 </div>
 {% endblock %}
